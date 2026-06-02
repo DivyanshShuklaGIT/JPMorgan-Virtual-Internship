@@ -26,3 +26,39 @@ Completed the JPMorgan Chase Software Engineering Virtual Experience Program on 
 - REST API Integration
 - Database Design
 - Spring Boot Development
+
+# Midas Banking System
+
+A Spring Boot based banking transaction processing system built as part of the JPMorgan Chase Software Engineering Virtual Experience.
+
+## Architecture
+
+Kafka Producer
+      ↓
+Kafka Consumer
+      ↓
+Transaction Validation
+      ↓
+H2 Database
+      ↓
+Incentive API
+      ↓
+Balance REST API
+
+
+
+Kafka
+  ↓
+Transaction Listener
+  ↓
+Validation Layer
+  ↓
+JPA Repository
+  ↓
+H2 Database
+
+
+
+Incentive API
+      ↑
+ REST Call
